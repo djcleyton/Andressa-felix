@@ -1,0 +1,314 @@
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 34px;
+
+}
+
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(247, 236, 245, 0.669),
+    #fbc5d8), url("../assets/foto3.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 0;
+    opacity: 0.9;
+}
+
+.hero{
+    color: $primary-dark;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    padding: 10px;
+
+    H1{
+        text-align: center;
+        line-height: 90px;
+        max-width: 900px;
+        font-size: 42px;
+    }
+
+    H2{
+        text-align: center;
+        line-height: 25px;
+        font-size: 18px;
+        max-width: 900px;
+        line-height: 150%;
+    }
+
+    p{
+        text-align: center;
+        margin: 24px;
+
+    }
+
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: $primary-vermelho;
+    }
+
+}
+
+
+.button-contact{
+    padding: 10px 18px;
+    color: $primary-rose;
+    background-color: $primary-vermelho;
+    border: 0;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 18px 0;
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+
+        h1 {
+            font-size: 30px;
+            padding: 0 14px;
+            width: 100%;
+        }
+        h2{
+            font-size: 14px;
+            padding: 0 14px;
+            width: 100%;
+            line-height: 150%;
+        }
+
+        P{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero h1 {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 10px;
+        line-height: 150%;
+    }
+}
+
+.about{
+    background-color: $primary-rose;
+    overflow: hidden;
+    color: $primary-dark;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px ;
+    img{
+        max-width: 370px;
+        width: 100vh;
+    }
+}
+
+.about-content div{
+    flex: 1;
+}
+
+.about-description{
+    h1{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 14px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-content{
+       flex-direction: column;
+    }
+}
+
+.services{
+    background-color: $primary-branco;
+    color: $primary-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.cilios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0 44px 34px 44px;
+}
+
+.cilio{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-branco;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        max-width: 400px;
+        transition: transform 0.2s;
+    }
+}
+
+.cilio img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.cilio-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: $primary-branco;
+    z-index: 99;
+}
+
+.cilio-info button{
+    color: $primary-claro;
+    background-color: $primary-vermelho;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .cilios{
+        flex-direction: column;
+    }
+
+    .cilio img{
+        max-width: 280px;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 0;
+    gap: 12px;
+    color: $primary-dark;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 10px;
+    color: $primary-dark;
+}
+
+.footer img{
+    width: 250px;
+
+}
+
+.footer p{
+    padding: 40px;
+    font-size: 14px;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99;
+    img{
+        max-width: 54px;
+        transition: transform 0.5s;
+    }
+
+    img:hover{
+        transform: scale(1.2);
+    }
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: -12px;
+    left: -144px;
+    background-color: $primary-rose;
+    color: $primary-dark;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp{
+        img{
+            max-width: 50px;
+        }
+    }
+}
