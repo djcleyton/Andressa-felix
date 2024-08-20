@@ -78,9 +78,6 @@ i {
   .header-button {
     display: none;
   }
-  .bg-home {
-    width: 110%;
-  }
 }
 .container {
   max-width: 1440px;
@@ -90,7 +87,7 @@ i {
 
 .bg-home {
   position: relative;
-  width: 110%;
+  width: 90%;
 }
 
 .bg-home::before {
@@ -100,18 +97,18 @@ i {
   background-image: linear-gradient(to bottom, rgba(247, 236, 245, 0.669), #fbc5d8), url("../assets/foto3.jpg");
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 105%;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 20% 0;
   opacity: 0.9;
 }
 
 .hero {
   color: #382f32;
-  min-height: 100%;
+  min-height: 110%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,9 +188,6 @@ i {
   .hero h2 {
     font-size: 10px;
     line-height: 150%;
-  }
-  .bg-home {
-    width: 110%;
   }
 }
 .about {
