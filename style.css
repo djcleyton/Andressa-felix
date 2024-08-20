@@ -57,7 +57,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 250px;
 }
 
 @media screen and (max-width: 768px) {
