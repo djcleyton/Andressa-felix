@@ -95,10 +95,11 @@
 
 @media screen and (max-width: 768px){
     .hero{
-        min-height: 50vh;
+        min-height: 100vh;
+
 
         h1 {
-            font-size: 40px;
+            font-size: 50px;
             padding: 0 14px;
             width: 100%;
         }
@@ -113,6 +114,7 @@
             font-size: 15px;
         }
     }
+
 }
 
 @media screen and (max-width:480px) {
@@ -123,6 +125,9 @@
     .hero h2 {
         font-size: 10px;
         line-height: 150%;
+    }
+    .bg-home{
+        width: 110%;
     }
 }
 
@@ -170,6 +175,9 @@
     .about-content{
        flex-direction: column;
 
+    }
+    .bg-home{
+        width: 110%;
     }
 }
 
@@ -253,6 +261,7 @@
     .cilio img{
         max-width: 280px;
     }
+
 }
 .footer{
     display: flex;
@@ -286,6 +295,7 @@
     bottom: 24px;
     right: 40px;
     z-index: 99;
+
     img{
         max-width: 54px;
         transition: transform 0.5s;
@@ -317,9 +327,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .bg-home{
+        width:100%;
+    }
     .btn-whatsapp{
         img{
-            max-width: 50px;
+            max-width: 70%;
         }
     }
 }

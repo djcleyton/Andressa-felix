@@ -14,7 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 110%;
+  width: 100%;
 }
 
 i {
@@ -57,7 +57,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 350px;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,10 +73,13 @@ i {
   }
   .header-logo img {
     width: 100%;
-    margin-top: 0;
+    margin-top: 40px;
   }
   .header-button {
     display: none;
+  }
+  .bg-home {
+    width: 110%;
   }
 }
 .container {
@@ -164,10 +167,10 @@ i {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 50vh;
+    min-height: 100vh;
   }
   .hero h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding: 0 14px;
     width: 100%;
   }
@@ -188,6 +191,9 @@ i {
   .hero h2 {
     font-size: 10px;
     line-height: 150%;
+  }
+  .bg-home {
+    width: 110%;
   }
 }
 .about {
@@ -225,6 +231,9 @@ i {
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+  }
+  .bg-home {
+    width: 110%;
   }
 }
 .services {
@@ -366,8 +375,11 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .bg-home {
+    width: 100%;
+  }
   .btn-whatsapp img {
-    max-width: 50px;
+    max-width: 70%;
   }
 }
 body {
