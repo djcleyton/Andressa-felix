@@ -7,6 +7,7 @@
 
 header {
   width: 100%;
+  padding-top: 24px;
 }
 
 .header-content {
@@ -55,12 +56,12 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 350px;
 }
 
 @media screen and (max-width: 768px) {
   .header-content {
-    width: 100%;
+    width: 300%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -85,6 +86,7 @@ i {
 
 .bg-home {
   position: relative;
+  width: 110%;
 }
 
 .bg-home::before {
@@ -99,7 +101,7 @@ i {
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 30% 0;
+  background-position: 100% 0;
   opacity: 0.9;
 }
 
@@ -111,12 +113,13 @@ i {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  padding-top: 24px;
 }
 .hero H1 {
   text-align: center;
   line-height: 100px;
   max-width: 900px;
-  font-size: 42px;
+  font-size: 50px;
 }
 .hero H2 {
   text-align: center;
@@ -127,7 +130,7 @@ i {
 }
 .hero p {
   text-align: center;
-  margin: 24px;
+  margin: 28px;
 }
 .hero span {
   font-weight: bold;
@@ -190,13 +193,14 @@ i {
   background-color: #fbc5d8;
   overflow: hidden;
   color: #382f32;
+  width: 110%;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 18px;
   padding: 34px 14px 64px 14px;
 }
 .about-content img {
@@ -230,7 +234,7 @@ i {
   align-items: center;
   justify-content: center;
   padding: 54px 10px;
-  width: 100%;
+  width: 110%;
 }
 
 .services-content h2 {
@@ -367,7 +371,7 @@ i {
 }
 body {
   font-family: "sora", sans-serif;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   position: relative;
   background-color: #f7f7f7;

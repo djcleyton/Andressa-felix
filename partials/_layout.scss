@@ -1,14 +1,14 @@
 
 .container{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto ;
     padding: 0 34px;
 
 }
 
 .bg-home{
     position: relative;
-
+    width: 110%;
 }
 
 .bg-home::before{
@@ -24,7 +24,7 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30% 0;
+    background-position: 100% 0;
     opacity: 0.9;
 }
 
@@ -36,12 +36,14 @@
     align-items:center ;
     justify-content: center;
     padding: 10px;
+    padding-top: 24px;
+
 
     H1{
         text-align: center;
         line-height: 100px;
         max-width: 900px;
-        font-size: 42px;
+        font-size: 50px;
     }
 
     H2{
@@ -54,7 +56,7 @@
 
     p{
         text-align: center;
-        margin: 24px;
+        margin: 28px;
 
     }
 
@@ -128,23 +130,27 @@
     background-color: $primary-rose;
     overflow: hidden;
     color: $primary-dark;
+    width: 110%;
 }
 
 .about-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 18px;
     padding: 34px 14px 64px 14px ;
+
 
     img{
         max-width: 400px;
+
 
     }
 }
 
 .about-content div{
     flex: 1;
+
 }
 
 .about-description{
@@ -163,6 +169,7 @@
 @media screen and (max-width:768px) {
     .about-content{
        flex-direction: column;
+
     }
 }
 
@@ -174,7 +181,7 @@
     align-items: center;
     justify-content: center;
     padding: 54px 10px;
-    width: 100%;
+    width: 110%;
 }
 
 .services-content h2{
@@ -255,6 +262,7 @@
     padding: 44px 0;
     gap: 12px;
     color: $primary-dark;
+
 }
 
 .footer-icons{

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+
 }
 
 @import "partials/colors";
@@ -11,9 +12,9 @@
 
 body{
     font-family: 'sora', sans-serif ;
-    width: 100%;
+    width: 90%;
     height: 100vh;
-    position: relative;
+    position:relative;
     background-color: $primary-branco;
 }
 
