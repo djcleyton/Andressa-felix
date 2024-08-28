@@ -3,12 +3,19 @@
     max-width: 1440px;
     margin: 0 auto ;
     padding: 0 34px;
+}
 
+body{
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 0;
+    background: #fbc5d8;
 }
 
 .bg-home{
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 .bg-home::before{
@@ -24,13 +31,13 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 20% 0;
+    background-position: 10% 0;
     opacity: 0.9;
 }
 
 .hero{
     color: $primary-dark;
-    min-height: 110%;
+    min-height: 550%;
     display: flex;
     flex-direction: column;
     align-items:center ;
@@ -141,7 +148,7 @@
     align-items: center;
     justify-content: center;
     gap: 18px;
-    padding: 34px 14px 64px 14px ;
+    padding: 30px 12px 64px 14px ;
 
 
     img{
@@ -175,7 +182,7 @@
 
     }
     .bg-home{
-        width: 110%;
+        width: 90%;
     }
 }
 
@@ -187,7 +194,7 @@
     align-items: center;
     justify-content: center;
     padding: 54px 10px;
-    width: 110%;
+    width: 100%;
 }
 
 .services-content h2{
@@ -201,7 +208,7 @@
     line-height: 150%;
     margin-bottom: 14px;
     text-align: center;
-    max-width: 680px;
+    max-width: 580px;
 }
 
 .cilios{
@@ -279,7 +286,7 @@
 }
 
 .footer img{
-    width: 250px;
+    width: 150px;
 
 }
 
@@ -290,8 +297,8 @@
 
 .btn-whatsapp{
     position: fixed;
-    bottom: 24px;
-    right: 40px;
+    bottom: 30px;
+    right: 50px;
     z-index: 99;
 
     img{
@@ -332,5 +339,11 @@
         img{
             max-width: 70%;
         }
+    }
+}
+
+@media screen and (max-width: 300px){
+    .bg-home{
+        width: 100%;
     }
 }
